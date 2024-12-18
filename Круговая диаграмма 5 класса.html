@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Highcharts demo</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+     <!-- Load the Highcharts scripts. Please note that the Chatbot loads all scripts
+    because we do not know what is being used in the configuration previews. In
+    production, unused scripts should be removed. --> <script src="https://code.highcharts.com/highcharts.js"></script> <script src="https://code.highcharts.com/highcharts-more.js"></script> <script src="https://code.highcharts.com/highcharts-3d.js"></script> <script src="https://code.highcharts.com/modules/stock.js"></script> <script src="https://code.highcharts.com/maps/modules/map.js"></script> <script src="https://code.highcharts.com/modules/gantt.js"></script> <script src="https://code.highcharts.com/modules/exporting.js"></script> <script src="https://code.highcharts.com/modules/parallel-coordinates.js"></script> <script src="https://code.highcharts.com/modules/accessibility.js"></script> <script src="https://code.highcharts.com/modules/annotations-advanced.js"></script> <script src="https://code.highcharts.com/modules/data.js"></script> <script src="https://code.highcharts.com/modules/draggable-points.js"></script> <script src="https://code.highcharts.com/modules/static-scale.js"></script> <script src="https://code.highcharts.com/modules/broken-axis.js"></script> <script src="https://code.highcharts.com/modules/heatmap.js"></script> <script src="https://code.highcharts.com/modules/tilemap.js"></script> <script src="https://code.highcharts.com/modules/timeline.js"></script> <script src="https://code.highcharts.com/modules/treemap.js"></script> <script src="https://code.highcharts.com/modules/treegraph.js"></script> <script src="https://code.highcharts.com/modules/item-series.js"></script> <script src="https://code.highcharts.com/modules/drilldown.js"></script> <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script> <script src="https://code.highcharts.com/modules/bullet.js"></script> <script src="https://code.highcharts.com/modules/funnel.js"></script> <script src="https://code.highcharts.com/modules/funnel3d.js"></script> <script src="https://code.highcharts.com/modules/pyramid3d.js"></script> <script src="https://code.highcharts.com/modules/networkgraph.js"></script> <script src="https://code.highcharts.com/modules/pareto.js"></script> <script src="https://code.highcharts.com/modules/pattern-fill.js"></script> <script src="https://code.highcharts.com/modules/price-indicator.js"></script> <script src="https://code.highcharts.com/modules/sankey.js"></script> <script src="https://code.highcharts.com/modules/arc-diagram.js"></script> <script src="https://code.highcharts.com/modules/dependency-wheel.js"></script> <script src="https://code.highcharts.com/modules/series-label.js"></script> <script src="https://code.highcharts.com/modules/solid-gauge.js"></script> <script src="https://code.highcharts.com/modules/sonification.js"></script> <script src="https://code.highcharts.com/modules/stock-tools.js"></script> <script src="https://code.highcharts.com/modules/streamgraph.js"></script> <script src="https://code.highcharts.com/modules/sunburst.js"></script> <script src="https://code.highcharts.com/modules/variable-pie.js"></script> <script src="https://code.highcharts.com/modules/variwide.js"></script> <script src="https://code.highcharts.com/modules/vector.js"></script> <script src="https://code.highcharts.com/modules/venn.js"></script> <script src="https://code.highcharts.com/modules/windbarb.js"></script> <script src="https://code.highcharts.com/modules/wordcloud.js"></script> <script src="https://code.highcharts.com/modules/xrange.js"></script> <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script> <script src="https://code.highcharts.com/modules/drag-panes.js"></script> <script src="https://code.highcharts.com/modules/debugger.js"></script> <script src="https://code.highcharts.com/modules/dumbbell.js"></script> <script src="https://code.highcharts.com/modules/lollipop.js"></script> <script src="https://code.highcharts.com/modules/cylinder.js"></script> <script src="https://code.highcharts.com/modules/organization.js"></script> <script src="https://code.highcharts.com/modules/dotplot.js"></script> <script src="https://code.highcharts.com/modules/marker-clusters.js"></script> <script src="https://code.highcharts.com/modules/hollowcandlestick.js"></script> <script src="https://code.highcharts.com/modules/heikinashi.js"></script> <div id="container"></div> 
+    </body>
+    <script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Результаты опроса о компьютерных вирусах'
+    },
+    series: [{
+        name: 'Ответы',
+        data: [
+            {
+                name: 'Знакомы с вирусами (Да)',
+                y: 18
+            },
+            {
+                name: 'Знакомы с вирусами (Нет)',
+                y: 4
+            },
+            {
+                name: 'Вредоносные программы (Не знаю)',
+                y: 21
+            },
+            {
+                name: 'Вредоносные программы (Winrar)',
+                y: 1
+            },
+            {
+                name: 'Способы заражения (Электронная почта)',
+                y: 6
+            },
+            {
+                name: 'Способы заражения (Флеш-накопители)',
+                y: 4
+            },
+            {
+                name: 'Способы заражения (Скачивание файлов)',
+                y: 20
+            },
+            {
+                name: 'Способы заражения (Заражённые сайты)',
+                y: 19
+            },
+            {
+                name: 'Способы заражения (Другие)',
+                y: 1
+            },
+            {
+                name: 'Меры защиты (Антивирус)',
+                y: 13
+            },
+            {
+                name: 'Меры защиты (Ничего)',
+                y: 8
+            },
+            {
+                name: 'Меры защиты (Антивирус + смена паролей)',
+                y: 1
+            },
+            {
+                name: 'Обновление антивируса (Регулярно)',
+                y: 6
+            },
+            {
+                name: 'Обновление антивируса (Иногда)',
+                y: 13
+            },
+            {
+                name: 'Обновление антивируса (Никогда)',
+                y: 3
+            },
+            {
+                name: 'Последствия заражения (Да)',
+                y: 15
+            },
+            {
+                name: 'Последствия заражения (Нет)',
+                y: 7
+            },
+            {
+                name: 'Важность кибербезопасности (Очень важна)',
+                y: 19
+            },
+            {
+                name: 'Важность кибербезопасности (Важна)',
+                y: 3
+            },
+            {
+                name: 'Важность кибербезопасности (Неважна)',
+                y: 0
+            },
+            {
+                name: 'Информация на уроках (Да)',
+                y: 6
+            },
+            {
+                name: 'Информация на уроках (Нет)',
+                y: 16
+            }
+        ]
+    }]
+});
+</script>
+</html>
